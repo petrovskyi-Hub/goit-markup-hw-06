@@ -69,19 +69,64 @@
       <!-- Modal -->
       <div class="backdrop is-hidden" data-modal>
         <div class="modal">
-          <form class="form">
-            <b>Оставьте свои данные, мы вам перезвоним</b>
+          <form class="form js-order-form">
+            <b class="form__title">Оставьте свои данные, мы вам перезвоним</b>
 
-            <div class="form-field">
-              <label for="name">Имя</label>
-              <input
-                type="text"
-                name="name"
-                id="name"
-                placeholder="Иван Иваныч"
-                autofocus
-              />
+            <ul class="form__contacts-list list">
+              <li class="form__field">
+                <label class="form__field-lable" for="name">Имя</label>
+                <input
+                  class="form__field-inpute"
+                  type="text"
+                  name="name"
+                  id="name"
+                  autofocus
+                />
+              </li>
+
+              <li class="form__field">
+                <label class="form__field-lable" for="tel">Телефон</label>
+                <input
+                  class="form__field-inpute"
+                  type="tel"
+                  name="tel"
+                  id="tel"
+                />
+              </li>
+
+              <li class="form__field">
+                <label class="form__field-lable" for="mail">Почта</label>
+                <input
+                  class="form__field-inpute"
+                  type="email"
+                  name="mail"
+                  id="mail"
+                />
+              </li>
+            </ul>
+
+            <div class="form__comment">
+              <label class="form__comment-lable" for="comment"
+                >Kоментарий
+              </label>
+              <textarea
+                class="form__comment-field"
+                name="comment"
+                id="comment"
+              ></textarea>
             </div>
+
+            <div class="agreement">
+              <input type="checkbox" name="agreement" id="agreement" />
+              <label class="agreement__lable" for="agreement">
+                Соглашаюсь с рассылкой и принимаю
+                <a class="agreement__link" href="">Условия договора</a>
+              </label>
+            </div>
+
+            <button class="button suubmit-button" type="submit">
+              Отправить
+            </button>
           </form>
           <button class="close-button" data-modal-close>
             <svg class="close-icon" width="18" height="18">
@@ -541,5 +586,22 @@
 
     <!-- Modal script -->
     <script src="./JS/modal.js"></script>
+
+    <!-- Form script -->
+    <script>
+      (() => {
+        document
+          .querySelector(".js-order-form")
+          .addEventListener("submit", (e) => {
+            e.preventDefault();
+
+            new FormData(e.currentTarget).forEach((value, name) =>
+              console.log(`${name}: ${value}`)
+            );
+
+            e.currentTarget.reset();
+          });
+      })();
+    </script>
   </body>
 </html>
