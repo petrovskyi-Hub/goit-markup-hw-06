@@ -284,7 +284,6 @@
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 70px;
 
   padding-top: 27px;
   padding-bottom: 27px;
@@ -294,8 +293,14 @@
 
 .possibilities__title {
   margin: 0;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
   color: var(--primary-white-color);
   text-align: center;
+  text-transform: uppercase;
 }
 
 /* .possibilities-title:hover,
@@ -337,7 +342,7 @@
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.9;
+  line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
 }
@@ -347,9 +352,9 @@
   margin-bottom: 16px;
 
   color: var(--primary-text-color);
-  font-weight: 500;
+  font-weight: 400;
   font-size: 16px;
-  line-height: 1.9;
+  line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
 }
