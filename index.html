@@ -562,12 +562,22 @@
           <!-- Блок подписки -->
           <div class="subscribe-box">
             <p class="footer-titles">Подпишитесь на рассылку</p>
-            <button class="button send-button" type="submit">
-              Подписаться
-              <svg class="send-icon" width="24" height="24">
-                <use href="./images/sprite-min.svg#icon-send"></use>
-              </svg>
-            </button>
+            <form class="subscribe__form">
+              <label class="subscribe__field-lable" for="mail">E-mail</label>
+              <input
+                class="subscribe__field-inpute"
+                type="email"
+                name="mail"
+                id="mail"
+              />
+
+              <button class="button subscribe__button" type="submit">
+                Подписаться
+                <svg class="send-icon" width="24" height="24">
+                  <use href="./images/sprite-min.svg#icon-send"></use>
+                </svg>
+              </button>
+            </form>
           </div>
         </div>
 

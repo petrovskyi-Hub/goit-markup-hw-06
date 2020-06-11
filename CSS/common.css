@@ -87,7 +87,7 @@ textarea {
   transform: scale(0.95);
 }
 
-.send-button {
+.subscribe__button {
   display: flex;
 
   margin-left: auto;
@@ -365,6 +365,40 @@ textarea {
 
 .subscribe-box {
   width: 570px;
+}
+
+.subscribe__form {
+  position: relative;
+  display: flex;
+}
+
+.subscribe__field-inpute {
+  width: 358px;
+  padding: 18px 12px;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+  color: var(--footer-link-color);
+
+  background-color: inherit;
+  outline-style: none;
+}
+
+.subscribe__field-lable {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+  color: var(--footer-link-color);
 }
 
 .copyright {

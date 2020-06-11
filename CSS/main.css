@@ -118,6 +118,13 @@
   border: 1px solid var(--form-field-border-color);
   border-radius: 4px;
   outline-style: none;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.01em;
+
+  color: var(--primary-text-color);
 }
 
 .form__comment {
