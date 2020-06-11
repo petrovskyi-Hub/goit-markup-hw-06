@@ -109,7 +109,7 @@
   line-height: 1.14;
   letter-spacing: 0.01em;
 
-  color: var(--title-text-color);
+  color: var(--primary-text-color);
 }
 
 .form__field-inpute {
@@ -117,6 +117,7 @@
 
   border: 1px solid var(--form-field-border-color);
   border-radius: 4px;
+  outline-style: none;
 }
 
 .form__comment {
@@ -132,6 +133,7 @@
 
   border: 1px solid var(--form-field-border-color);
   border-radius: 4px;
+  outline-style: none;
 }
 
 .form__comment-lable {
@@ -144,7 +146,7 @@
   line-height: 1.14;
   letter-spacing: 0.01em;
 
-  color: var(--title-text-color);
+  color: var(--primary-text-color);
 }
 
 .agreement {
