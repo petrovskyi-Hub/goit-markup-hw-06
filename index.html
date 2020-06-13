@@ -69,60 +69,67 @@
       <!-- Modal -->
       <div class="backdrop is-hidden" data-modal>
         <div class="modal">
-          <form class="form js-order-form">
+          <form class="form js-order-form" autocomplete="off">
             <b class="form__title">Оставьте свои данные, мы вам перезвоним</b>
 
-            <ul class="form__contacts-list list">
-              <li class="form__field">
-                <label class="form__field-lable" for="name">Имя</label>
-                <input
-                  class="form__field-inpute"
-                  type="text"
-                  name="name"
-                  id="name"
-                  autofocus
-                />
-              </li>
+            <label class="form__field">
+              <input
+                class="form__field-inpute"
+                type="text"
+                name="name"
+                placeholder=" "
+              />
+              <span class="form__field-lable">Имя</span>
+              <svg class="form__field-icon" width="18" height="18">
+                <use href="./images/sprite-min.svg#form-person-icon"></use>
+              </svg>
+            </label>
 
-              <li class="form__field">
-                <label class="form__field-lable" for="tel">Телефон</label>
-                <input
-                  class="form__field-inpute"
-                  type="tel"
-                  name="tel"
-                  id="tel"
-                />
-              </li>
+            <label class="form__field">
+              <input
+                class="form__field-inpute"
+                type="tel"
+                name="tel"
+                placeholder=" "
+              />
+              <span class="form__field-lable">Телефон</span>
+              <svg class="form__field-icon" width="18" height="18">
+                <use href="./images/sprite-min.svg#form-phone-icon"></use>
+              </svg>
+            </label>
 
-              <li class="form__field">
-                <label class="form__field-lable" for="mail">Почта</label>
-                <input
-                  class="form__field-inpute"
-                  type="email"
-                  name="mail"
-                  id="mail"
-                />
-              </li>
-            </ul>
+            <label class="form__field">
+              <input
+                class="form__field-inpute"
+                type="email"
+                name="email"
+                placeholder=" "
+              />
+              <span class="form__field-lable">Email</span>
+              <svg class="form__field-icon" width="18" height="18">
+                <use href="./images/sprite-min.svg#form-email-icon"></use>
+              </svg>
+            </label>
 
-            <div class="form__comment">
-              <label class="form__comment-lable" for="comment"
-                >Kоментарий
-              </label>
+            <label class="form__comment">
               <textarea
                 class="form__comment-field"
                 name="comment"
-                id="comment"
+                placeholder=" "
               ></textarea>
-            </div>
+              <span class="form__comment-lable">Kоментарий</span>
+            </label>
 
-            <div class="agreement">
-              <input type="checkbox" name="agreement" id="agreement" />
-              <label class="agreement__lable" for="agreement">
-                Соглашаюсь с рассылкой и принимаю
-                <a class="agreement__link" href="">Условия договора</a>
-              </label>
-            </div>
+            <label class="agreement">
+              <input class="checkbox" type="checkbox" name="agreement" />
+              <svg class="checkbox__icon" width="15" height="15">
+                <use href="./images/sprite-min.svg#form-check-icon"></use>
+              </svg>
+              <span class="agreement__lable"
+                >Соглашаюсь с рассылкой и принимаю
+              </span>
+              <a class="agreement__link" href="">Условия договора</a>
+            </label>
 
             <button class="button suubmit-button" type="submit">
               Отправить
@@ -563,13 +570,14 @@
           <div class="subscribe-box">
             <p class="footer-titles">Подпишитесь на рассылку</p>
             <form class="subscribe__form">
-              <label class="subscribe__field-lable" for="mail">E-mail</label>
-              <input
-                class="subscribe__field-inpute"
-                type="email"
-                name="mail"
-                id="mail"
-              />
+              <label class="subscribe__field-lable">
+                <input
+                  class="subscribe__field-inpute"
+                  type="email"
+                  name="email"
+                  placeholder="E-mail"
+                />
+              </label>
 
               <button class="button subscribe__button" type="submit">
                 Подписаться
