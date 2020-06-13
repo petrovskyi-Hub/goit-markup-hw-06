@@ -124,7 +124,7 @@
 
 .form__field:focus-within > .form__field-lable,
 .form__field-inpute:not(:placeholder-shown) + .form__field-lable {
-  transform: translate(-26px, -38px) scale(0.86);
+  transform: translate(-28px, -38px) scale(0.86);
 
   color: var(--accent-color);
 }
@@ -205,7 +205,7 @@
 
 .form__comment:focus-within > .form__comment-lable,
 .form__comment-field:not(:placeholder-shown) + .form__comment-lable {
-  transform: translateY(-30px) scale(0.86);
+  transform: translate(-5px, -30px) scale(0.86);
 
   color: var(--accent-color);
 }
